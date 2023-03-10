@@ -15,8 +15,8 @@ function onFormData(e) {
 
 function dataFromLocalStorage() {
   const data = JSON.parse(localStorage.getItem('feedback-form-state'));
-  const email = document.querySelector('.feedback-form input');
-  const message = document.querySelector('.feedback-form textarea');
+  let email = document.querySelector('.feedback-form input');
+  let message = document.querySelector('.feedback-form textarea');
   console.log(data);
   if (data) {
     email.value = data.email;
